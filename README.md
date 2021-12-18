@@ -12,7 +12,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ```
 ### Using yarn
 ```bash
-    yarn start
+    yarn install
     yarn start
 ```
 Open [http://localhost:3000](http://localhost:3000) to view it in the your default browser.
