@@ -20,6 +20,19 @@
     cursor: pointer;
 }
 
+#bPlay{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+}
+#bPlusLess{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+
 .fa {
     padding: 10px 0px 9px 0px;
     border-radius: 15px;
