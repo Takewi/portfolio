@@ -1,5 +1,6 @@
 # My Portfolio Project
-I intend to build my portfolio simply using react + typescript.
+I intend to build my portfolio simply using react + typescript. <br/>
+Boostrap theme used: [Pulse](https://bootswatch.com/pulse/) <br/>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) using typescript template.
 
 ## Available Scripts & instaling dependencies
@@ -18,6 +19,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the your defau
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).<br/>
 To learn React, check out the [React documentation](https://reactjs.org/).
