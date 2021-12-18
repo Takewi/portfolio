@@ -1,4 +1,5 @@
 import { Link, Outlet } from "react-router-dom"
+import  AudioSpectrum  from "react-audio-spectrum2"
 import "./Layout.css"
 export const Layout = () => {
     return (
@@ -28,20 +29,36 @@ export const Layout = () => {
                             <a href="https://www.facebook.com/gustavoviegas231914" target={"_blank"} rel="noreferrer"><p className="fa fa-facebook" /></a>
                             <a href="https://github.com/Takewi" target={"_blank"} rel="noreferrer"><p className="fa fa-github" /></a>
                             <a href="https://www.youtube.com/channel/UCQzQ3vyOhPwzxYh4vRpyiWA" target={"_blank"} rel="noreferrer"><p className="fa fa-youtube" /></a>
+                            <div className="text-center container">
+                                <p className="h6 ml-3"><b>Discord:</b></p>
+                                <p className="h6 zoom"><b>Gawi_#0019</b></p>
+                            </div>
                         </div>
                         <hr />
                         <div className="container">
                             <div className="text-center">
                                 <p className="h6 zoom"><b>Lofi beats</b></p>
                             </div>
-                            <iframe
-                                className="zoom"
-                                style={{borderRadius: "20px"}}
-                                width="195"
-                                height="110"
-                                src="https://www.youtube.com/embed/gEpXY2zYZ5k" 
-                                title="YouTube video player" 
-                                allow="accelerometer; ; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            <audio 
+                                id="audio-element"
+                                src="./sound.mp3"
+                                autoPlay
+                            />            
+                            <AudioSpectrum
+                                id="audio-canvas"
+                                height={200}
+                                width={250}
+                                audioId={'audio-element'}
+                                capColor={'red'}
+                                capHeight={2}
+                                meterWidth={2}
+                                meterCount={512}
+                                meterColor={[
+                                    { stop: 0, color: '#f00' },
+                                    { stop: 0.5, color: '#0CD7FD' },
+                                    { stop: 1, color: 'red' }
+                                ]}
+                                gap={3}
                             />
                         </div>
                     </div>
