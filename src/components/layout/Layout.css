@@ -18,6 +18,7 @@
 
 #gawi {
     cursor: default;
+    color: #fff;
     transform: scale(1.2);
     text-shadow:
     0 0 7px #fff,
@@ -27,8 +28,7 @@
     0 0 82px #fff,
     0 0 92px #fff,
     0 0 102px #fff,
-    0 0 151px #fff,
-    0 0 181px #fff;
+    0 0 151px #fff;
 }
 
 .NeoZoom:hover{
@@ -44,7 +44,9 @@
         0 0 102px #fff,
         0 0 151px #fff;
 }
-
+.zoom {
+    margin-bottom: 5px;
+}
 .zoom:hover{
     transform: scale(1.2);
     cursor: pointer;

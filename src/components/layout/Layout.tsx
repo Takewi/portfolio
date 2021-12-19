@@ -54,13 +54,17 @@ export const Layout = () => {
                         <div className="container">
                             <div className="text-center">
                                 <p className="h5 NeoZoom"><b>To talk with me</b></p>
-                                <p className="h6 zoom" style={{ fontSize: "15px" }}><b data-toggle="tooltip" data-placement="top" title="Click to copy my E-mail" onClick={()=> copy("gawi2k21@gmail.com")}>E-mail:</b></p>
+                                <p className="h6 zoom" style={{ fontSize: "15px" }}><b data-toggle="tooltip" data-placement="top" title="Click to copy my E-mail" onClick={() => copy("gawi2k21@gmail.com")}>E-mail:</b></p>
                                 <p>gawi2k21@gmail.com</p>
-                                <p className="h6 zoom" style={{ fontSize: "15px" }}><b data-toggle="tooltip" data-placement="top" title="Click to copy my Whatsapp" onClick={()=> copy("+55 53 981125790")}>Whatsapp:</b></p>
+                                <p className="h6 zoom" style={{ fontSize: "15px" }}><b data-toggle="tooltip" data-placement="top" title="Click to copy my Whatsapp" onClick={() => copy("+55 53 981125790")}>Whatsapp:</b></p>
                                 <p>+55 53 981125790</p>
                                 <p className="h6 zoom" style={{ fontSize: "15px" }}><b data-toggle="tooltip" data-placement="top" title="Click to copy my Discord Tag" onClick={() => copy("Gawi_#0019")}>Discord:</b></p>
                                 <p>Gawi_#0019</p>
                             </div>
+                        </div>
+                        <hr />
+                        <div className="text-center">
+                            <a target="_blank" href="./Gustavo S. Viegas.pdf" style={{textDecoration: "none"}}><p className="h5 NeoZoom" style={{color: "white", cursor: "pointer"}}> <b>See my resume!</b> </p></a>
                         </div>
                         <hr />
                         <div className="container">
@@ -86,14 +90,14 @@ export const Layout = () => {
                                 />
                                 <div style={{ position: "absolute" }} className="d-flex justify-content-around">
                                     <button data-toggle="tooltip" data-placement="top" title="Turn down volume" onClick={() => handleDownVolume()} style={{ cursor: "pointer" }} id="bPlusLess" className="fa fa-minus" />
-                                    <button data-toggle="tooltip" data-placement="top" title="Play music" onClick={() => setPlaying(!playing)} style={{ cursor: "pointer" }} id="bPlay" className={`fa ${playing ? "fa-stop" : "fa-play"}`} />
+                                    <button data-toggle="tooltip" data-placement="top" title={`${playing ? "Pause" : "Play" } music`} onClick={() => setPlaying(!playing)} style={{ cursor: "pointer" }} id="bPlay" className={`fa ${playing ? "fa-stop" : "fa-play"}`} />
                                     <button data-toggle="tooltip" data-placement="top" title="Turn up volume" onClick={() => handleUpVolume()} style={{ cursor: "pointer" }} id="bPlusLess" className="fa fa-plus" />
                                 </div>
                             </div>
                         </div>
                         <hr />
                         <div className="text-center">
-                            <p>This website was made with <a href="https://reactjs.org/" style={{ color: "white" }} target={"_blank"} rel="noreferrer" >React</a> in <a style={{ color: "white" }} target={"_blank"} href="https://www.typescriptlang.org/" rel="noreferrer">Ts</a>.</p>
+                            <p style={{marginBottom: "0px"}}>This website was made with <a href="https://reactjs.org/" style={{ color: "white" }} target={"_blank"} rel="noreferrer" >React</a> in <a style={{ color: "white" }} target={"_blank"} href="https://www.typescriptlang.org/" rel="noreferrer">Ts</a>.</p>
                         </div>
                     </div>
                 </div>
