@@ -1,7 +1,7 @@
-import { Link, Outlet } from "react-router-dom"
 import AudioSpectrum from "react-audio-spectrum2"
 import "./Layout.css"
 import { useEffect, useState } from "react"
+
 export const Layout = () => {
     const [audio] = useState(new Audio("./sound.mp3"))
     const [playing, setPlaying] = useState(false)
@@ -31,40 +31,40 @@ export const Layout = () => {
     }
     return (
         <>
-            <div className="d-flex align-items-start" style={{ backgroundImage: "url('./background.gif')", backgroundRepeat: 'no-repeat', backgroundSize: "100%" }}>
-                <nav className="navbar navbar-expand-lg navbar-dark bg-primary order-2 vw-100 d-flex justify-content-center">
-                    <div>
-                        <Link style={{ fontSize: "25px" }} className="nav-link text-white neon" to="home">Home</Link>
+            <div className="d-flex align-items-center vh-100" style={{fontFamily: "Roboto Mono"}}>
+                <div className="flex-shrink-0 p-3 text-white" style={{width: "250px", }}>
+                    <div className="text-center text-white text-decoration-none">
+                        <p id="gawi" className="h1"><b>Gawi_</b></p>
                     </div>
-                    <div>
-                        <Link style={{ fontSize: "25px" }} className="nav-link text-white neon" to="about">About</Link>
-                    </div>
-                </nav>
-                <div className="vh-100 flex-shrink-0 p-3 text-white bg-primary order-1" style={{ width: "250px" }}>
-                    <Link to="/" className="text-center text-white text-decoration-none">
-                        <p className="neon h1">Gawi_</p>
-                    </Link>
                     <hr />
                     <div>
                         <div className="text-center">
-                            <p className="h4 zoom"><b>Social</b></p>
+                            <p className="h4 NeoZoom"><b>Social</b></p>
                         </div>
                         <div className="container">
                             <a href="https://twitter.com/gawi2k21" target={"_blank"} rel="noreferrer"><p className="fa fa-twitter" /></a>
-                            <a href="https://www.linkedin.com/in/gustavo-viegas-8989a01b4/" target={"_blank"} rel="noreferrer"><p className="faEdit fa fa-linkedin" /></a>
-                            <a href="https://www.instagram.com/gawii_2i/?hl=pt-br" target={"_blank"} rel="noreferrer"><p className="faEdit fa fa-instagram" /></a>
-                            <a href="https://www.facebook.com/gustavoviegas231914" target={"_blank"} rel="noreferrer"><p className="faEdit fa fa-facebook" /></a>
-                            <a href="https://github.com/Takewi" target={"_blank"} rel="noreferrer"><p className="faEdit fa fa-github" /></a>
-                            <a href="https://www.youtube.com/channel/UCQzQ3vyOhPwzxYh4vRpyiWA" target={"_blank"} rel="noreferrer"><p className="faEdit fa fa-youtube" /></a>
-                            <div className="text-center container">
-                                <p className="h6 ml-3"><b>Discord:</b></p>
-                                <p className="h6 zoom"><b>Gawi_#0019</b></p>
+                            <a href="https://www.linkedin.com/in/gustavo-viegas-8989a01b4/" target={"_blank"} rel="noreferrer"><p className="fa fa-linkedin" /></a>
+                            <a href="https://www.instagram.com/gawii_2i/?hl=pt-br" target={"_blank"} rel="noreferrer"><p className="fa fa-instagram" /></a>
+                            <a href="https://www.facebook.com/gustavoviegas231914" target={"_blank"} rel="noreferrer"><p className="fa fa-facebook" /></a>
+                            <a href="https://github.com/Takewi" target={"_blank"} rel="noreferrer"><p className="fa fa-github" /></a>
+                            <a href="https://www.youtube.com/channel/UCQzQ3vyOhPwzxYh4vRpyiWA" target={"_blank"} rel="noreferrer"><p className="fa fa-youtube" /></a>
+                        </div>
+                        <hr />
+                        <div className="container">
+                            <div className="text-center">
+                                <p className="h5 NeoZoom"><b>To talk with me</b></p>
+                                <p className="h6 zoom" style={{fontSize: "15px"}}><b>E-mail:</b></p>
+                                <p>gawi2k21@gmail.com</p>
+                                <p className="h6 zoom" style={{fontSize: "15px"}}><b>Whatsapp:</b></p>
+                                <p>+55 53 981125790 </p>
+                                <p className="h6 zoom" style={{fontSize: "15px"}}><b>Discord:</b></p>
+                                <p>Gawi_#0019</p>
                             </div>
                         </div>
                         <hr />
                         <div className="container">
                             <div className="text-center">
-                                <p className="h6"><b>Lofi beat to relax:</b></p>
+                                <p className="h6 NeoZoom"><b>Lofi beat to relax:</b></p>
                             </div>
                             <div style={{ border: "double" }} className="text-center d-flex justify-content-center">
                                 <AudioSpectrum
@@ -90,10 +90,13 @@ export const Layout = () => {
                                 </div>
                             </div>
                         </div>
+                        <hr />
+                        <div className="text-center">
+                            <p>This website was made with React in Ts</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <Outlet />
         </>
     )
 }
