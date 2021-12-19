@@ -1,6 +1,7 @@
 import AudioSpectrum from "react-audio-spectrum2"
 import "./Layout.css"
 import { useEffect, useState } from "react"
+import copy from "copy-to-clipboard"
 
 export const Layout = () => {
     const [audio] = useState(new Audio("./sound.mp3"))
@@ -20,19 +21,19 @@ export const Layout = () => {
     }, [audio])
 
     const handleUpVolume = () => {
-        if(audio.volume < 1) {
+        if (audio.volume < 1) {
             audio.volume = Number((audio.volume + 0.1).toFixed(1))
         }
     }
     const handleDownVolume = () => {
-        if(audio.volume > 0.1) {
+        if (audio.volume > 0.1) {
             audio.volume = Number((audio.volume - 0.1).toFixed(1))
         }
     }
     return (
         <>
-            <div className="d-flex align-items-center vh-100" style={{fontFamily: "Roboto Mono"}}>
-                <div className="flex-shrink-0 p-3 text-white" style={{width: "250px", }}>
+            <div className="d-flex align-items-center vh-100" style={{ fontFamily: "Roboto Mono" }}>
+                <div className="flex-shrink-0 p-3 text-white" style={{ width: "250px", }}>
                     <div className="text-center text-white text-decoration-none">
                         <p id="gawi" className="h1"><b>Gawi_</b></p>
                     </div>
@@ -53,11 +54,11 @@ export const Layout = () => {
                         <div className="container">
                             <div className="text-center">
                                 <p className="h5 NeoZoom"><b>To talk with me</b></p>
-                                <p className="h6 zoom" style={{fontSize: "15px"}}><b>E-mail:</b></p>
+                                <p className="h6 zoom" style={{ fontSize: "15px" }}><b data-toggle="tooltip" data-placement="top" title="Click to copy my E-mail" onClick={()=> copy("gawi2k21@gmail.com")}>E-mail:</b></p>
                                 <p>gawi2k21@gmail.com</p>
-                                <p className="h6 zoom" style={{fontSize: "15px"}}><b>Whatsapp:</b></p>
-                                <p>+55 53 981125790 </p>
-                                <p className="h6 zoom" style={{fontSize: "15px"}}><b>Discord:</b></p>
+                                <p className="h6 zoom" style={{ fontSize: "15px" }}><b data-toggle="tooltip" data-placement="top" title="Click to copy my Whatsapp" onClick={()=> copy("+55 53 981125790")}>Whatsapp:</b></p>
+                                <p>+55 53 981125790</p>
+                                <p className="h6 zoom" style={{ fontSize: "15px" }}><b data-toggle="tooltip" data-placement="top" title="Click to copy my Discord Tag" onClick={() => copy("Gawi_#0019")}>Discord:</b></p>
                                 <p>Gawi_#0019</p>
                             </div>
                         </div>
@@ -83,16 +84,16 @@ export const Layout = () => {
                                     ]}
                                     gap={3}
                                 />
-                                <div style={{position: "absolute"}} className="d-flex justify-content-around">
-                                    <button onClick={() => handleDownVolume()} style={{ cursor: "pointer" }} id="bPlusLess" className="fa fa-minus" />
-                                    <button onClick={() => setPlaying(!playing)} style={{ cursor: "pointer" }} id="bPlay" className={`fa ${playing ? "fa-stop" : "fa-play"}`} />
-                                    <button onClick={() => handleUpVolume()} style={{ cursor: "pointer" }} id="bPlusLess" className="fa fa-plus" />
+                                <div style={{ position: "absolute" }} className="d-flex justify-content-around">
+                                    <button data-toggle="tooltip" data-placement="top" title="Turn down volume" onClick={() => handleDownVolume()} style={{ cursor: "pointer" }} id="bPlusLess" className="fa fa-minus" />
+                                    <button data-toggle="tooltip" data-placement="top" title="Play music" onClick={() => setPlaying(!playing)} style={{ cursor: "pointer" }} id="bPlay" className={`fa ${playing ? "fa-stop" : "fa-play"}`} />
+                                    <button data-toggle="tooltip" data-placement="top" title="Turn up volume" onClick={() => handleUpVolume()} style={{ cursor: "pointer" }} id="bPlusLess" className="fa fa-plus" />
                                 </div>
                             </div>
                         </div>
                         <hr />
                         <div className="text-center">
-                            <p>This website was made with React in Ts</p>
+                            <p>This website was made with <a href="https://reactjs.org/" style={{ color: "white" }} target={"_blank"} rel="noreferrer" >React</a> in <a style={{ color: "white" }} target={"_blank"} href="https://www.typescriptlang.org/" rel="noreferrer">Ts</a>.</p>
                         </div>
                     </div>
                 </div>

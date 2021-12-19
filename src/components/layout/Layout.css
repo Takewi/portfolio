@@ -17,6 +17,7 @@
 }
 
 #gawi {
+    cursor: default;
     transform: scale(1.2);
     text-shadow:
     0 0 7px #fff,
@@ -32,7 +33,7 @@
 
 .NeoZoom:hover{
     transform: scale(1.2);
-    cursor: pointer;
+    cursor: default;
     text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
