@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import AudioSpectrum from "react-audio-spectrum2"
-import "./LofiAudioSpectrum.css"
+import "./style.css"
 
 
 export const LofiAudioSpectrum = () => {
@@ -37,7 +37,7 @@ export const LofiAudioSpectrum = () => {
             <AudioSpectrum
                 id="audio-canvas"
                 height={170}
-                width={182}
+                width={213}
                 audioEle={audio}
                 capColor={'red'}
                 capHeight={2}

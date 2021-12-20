@@ -1,20 +1,20 @@
 import { LofiAudioSpectrum } from "../audio/LofiAudioSpectrum"
 import { Social } from "../social/Social"
 import { TalkWithMe } from "../talkWithMe/TalkWithMe"
-import "./Layout.css"
+import "./style.css"
 
 export const Layout = () => {
     return (
         <>
-            <div className="align-self-center border p-3" style={{ fontFamily: "Roboto Mono", backgroundColor: "rgba(95, 46, 117, 0.205)"}}>
+            <div className="align-self-center border p-3" style={{ fontFamily: "Roboto Mono", backgroundColor: "rgba(111, 0, 176, 0.56)"}}>
                 <div className="flex-shrink-0 text-white" style={{ width: "250px", }}>
                     <div className="text-center text-white text-decoration-none">
-                        <p id="gawi" className="h1"><b>Takewi</b></p>
+                        <p id="gawi" className="h1"><b>Gawi_ 👋</b></p>
                     </div>
                     <hr />
                     <div>
                         <div className="text-center">
-                            <p className="h4 NeoZoom"><b>Social</b></p>
+                            <p className="h4 NeoZoom"><b>Social 👥</b></p>
                             <Social />
                         </div>
                         <hr />
@@ -27,15 +27,19 @@ export const Layout = () => {
                                 style={{ textDecoration: "none" }}>
                                     <p 
                                         className="h5 NeoZoom" 
-                                        style={{ color: "white", cursor: "pointer" }}> 
-                                        <b>See my resume!</b> 
+                                        style={{ color: "white", cursor: "pointer" }}
+                                        data-toggle="tooltip"
+                                        data-placement="top"
+                                        title="Click to open my resume"
+                                        > 
+                                        <b>📄 See my resume!</b> 
                                     </p>
                             </a>
                         </div>
                         <hr />
                         <div className="container">
                             <div className="text-center">
-                                <p className="h6 NeoZoom"><b>Lofi beat to relax:</b></p>
+                                <p className="h6 NeoZoom"><b>😴 Lofi beat to relax:</b></p>
                             </div>
                             <LofiAudioSpectrum />
                         </div>
