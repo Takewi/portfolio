@@ -3,7 +3,7 @@ import { Layout } from './components/layout/Layout';
 
 export const App = () => {
   return (
-    <div className="d-flex justify-content-center" style={{height: "100%", flexWrap: "wrap"}}>
+    <div className="d-flex justify-content-center m-3">
       <Layout />
     </div>
   )
