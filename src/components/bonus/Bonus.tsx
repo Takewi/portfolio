@@ -8,7 +8,7 @@ export const Bonus = () => {
             backgroundColor: "rgba(111, 0, 176, 0.56)"
         }}
     >
-        <p id="gawi" className="h5"><b>Other works</b></p>
+        <p id="gawi" className="h5"><b>Other works ⚙️</b></p>
         <hr/>
         <p>
             🚧 still in development
