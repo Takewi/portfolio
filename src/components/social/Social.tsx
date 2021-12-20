@@ -1,4 +1,4 @@
-import "./Social.css"
+import "./style.css"
 export const Social = () => {
     return (
         <div className="container">
