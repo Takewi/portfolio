@@ -6,17 +6,17 @@ import "./Layout.css"
 export const Layout = () => {
     return (
         <>
-            <div className="d-flex align-items-center" style={{ fontFamily: "Roboto Mono" }}>
-                <div className="flex-shrink-0 p-3 text-white" style={{ width: "250px", }}>
+            <div className="align-self-center border p-3" style={{ fontFamily: "Roboto Mono" }}>
+                <div className="flex-shrink-0 text-white" style={{ width: "250px", }}>
                     <div className="text-center text-white text-decoration-none">
-                        <p id="gawi" className="h1"><b>Gawi_</b></p>
+                        <p id="gawi" className="h1"><b>Takewi</b></p>
                     </div>
                     <hr />
                     <div>
                         <div className="text-center">
                             <p className="h4 NeoZoom"><b>Social</b></p>
+                            <Social />
                         </div>
-                        <Social />
                         <hr />
                         <TalkWithMe/>
                         <hr />
