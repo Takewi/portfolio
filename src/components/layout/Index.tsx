@@ -1,6 +1,6 @@
-import { LofiAudioSpectrum } from "../audio/LofiAudioSpectrum"
-import { Social } from "../social/Social"
-import { TalkWithMe } from "../talkWithMe/TalkWithMe"
+import { LofiAudioSpectrum } from "../audio/Index"
+import { Social } from "../social/Index"
+import { TalkWithMe } from "../talkWithMe/Index"
 import "./style.css"
 
 export const Layout = () => {

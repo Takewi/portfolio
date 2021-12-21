@@ -1,7 +1,7 @@
 import React from 'react';
-import { Layout } from './components/layout/Layout';
-import { About } from "./components/about/About"
-import { Bonus } from "./components/bonus/Bonus"
+import { Layout } from './components/layout/Index';
+import { About } from "./components/about/Index"
+import { Bonus } from "./components/bonus/Index"
 
 export const App = () => {
   return (
