@@ -1,4 +1,5 @@
 # My Portfolio Project
+## This project is old, the ideal would be to redo it, but as I'm out of time and I want to keep it running, I just did a little refactoring using tailwindcss
 I intend to build my portfolio simply using react + typescript. <br/>
 Boostrap theme used: [Pulse](https://bootswatch.com/pulse/) <br/>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) using typescript template.
