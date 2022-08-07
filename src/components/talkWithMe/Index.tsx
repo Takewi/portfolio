@@ -1,7 +1,7 @@
 import copy from "copy-to-clipboard"
 export const TalkWithMe = () => {
     return (
-        <div className="container text-center">
+        <div className="text-center flex flex-col gap-1">
             <p className="h5 NeoZoom">
                 <b>To talk with me 🗣</b>
             </p>
@@ -36,11 +36,11 @@ export const TalkWithMe = () => {
                     data-toggle="tooltip"
                     data-placement="top"
                     title="Click to copy my Discord Tag"
-                    onClick={() => copy("Gawi_#0019")}>
+                    onClick={() => copy("Gawi_#0020")}>
                        💻 Discord:
                 </b>
             </p>
-            <p  style={{ fontSize: "15px" }}><b>Gawi_#0019</b></p>
+            <p  style={{ fontSize: "15px" }}><b>Gawi_#0020</b></p>
         </div>
     )
 }

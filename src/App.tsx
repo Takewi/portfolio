@@ -5,7 +5,7 @@ import { Bonus } from "./components/bonus/Index";
 
 export const App = () => {
     return (
-        <div className="h-screen w-screen flex flex-row justify-center items-center">
+        <div className="h-full w-full flex flex-wrap justify-center items-center gap-2">
             <About />
             <Layout />
             <Bonus />

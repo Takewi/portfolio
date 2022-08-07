@@ -1,11 +1,8 @@
 .fa {
-    padding: 10px 0px 9px 0px;
+    padding: 10px 0px 10px 0px;
     border-radius: 15px;
     font-size: 40px;
     width: 60px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
 }
 
 .fa:hover {

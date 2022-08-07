@@ -2,7 +2,7 @@ import "./bonus.css";
 export const Bonus = () => {
   return (
     <div
-      className="text-center border p-3 m-3 align-self-center text-white"
+      className="text-center border p-2 text-white flex flex-col gap-2"
       style={{
         fontFamily: "Roboto Mono",
         width: "300px",

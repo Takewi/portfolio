@@ -7,23 +7,23 @@ export const Layout = () => {
     return (
         <>
             <div
-                className="align-self-center border p-3"
+                className="border p-2"
                 style={{
                     fontFamily: "Roboto Mono",
                     backgroundColor: "rgba(111, 0, 176, 0.56)",
                 }}
             >
                 <div
-                    className="flex-shrink-0 text-white"
+                    className="text-white"
                     style={{ width: "250px" }}
                 >
-                    <div className="text-center text-white text-decoration-none">
-                        <p id="gawi" className="h1">
-                            <b>Gawi_ 👋</b>
-                        </p>
-                    </div>
-                    <hr />
-                    <div>
+                    <div className="flex flex-col gap-2">
+                        <div className="text-center text-white m-2">
+                            <p id="gawi" className="text-2xl">
+                                <b>Gawi_ 👋</b>
+                            </p>
+                        </div>
+                        <hr />
                         <div className="text-center">
                             <p className="h4 NeoZoom">
                                 <b>Social 👥</b>
@@ -54,7 +54,7 @@ export const Layout = () => {
                             </a>
                         </div>
                         <hr />
-                        <div className="container">
+                        <div className="flex flex-col gap-2">
                             <div className="text-center">
                                 <p className="h6 NeoZoom">
                                     <b>😴 Lofi beat to relax:</b>
@@ -63,7 +63,7 @@ export const Layout = () => {
                             <LofiAudioSpectrum />
                         </div>
                         <hr />
-                        <div className="text-center">
+                        <div className="flex flex-row justify-center">
                             <a href="https://www.counter12.com">
                                 <img
                                     style={{ height: "20px" }}

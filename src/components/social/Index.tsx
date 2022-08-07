@@ -1,7 +1,7 @@
 import "./style.css"
 export const Social = () => {
     return (
-        <div className="container">
+        <div className="flex flex-wrap justify-evenly">
             <a 
                 href="https://twitter.com/gawi2k21" 
                 target={"_blank"} 
